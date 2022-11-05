@@ -15,18 +15,38 @@ body{
     width: 100%;
     height: 100vh;
     position: relative;
-    overflow: hidden;
-    background-color: aqua;
+    display: flex;
+    flex-direction: column;
+    
    
 }
-.video_phone{
-    display: none;
+.box_video{
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+overflow: hidden;
+background-color: white;
 }
-video{
+.video{
+min-height: 100%;
+min-width: 100%;
+object-fit: cover;
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%,-50%);
+}
+.box_video:after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
-    
-    
+    height: 100%;
 }
+
 .absolute{
     width: 100%;
    height: 100%;
@@ -88,7 +108,7 @@ video{
     z-index: 100;
     text-transform: uppercase;
 }
-@media(max-width:380px){
+@media(max-width:413px){
     .logo_nav{
         width: 5rem;
         display: block;
