@@ -1,58 +1,65 @@
-:root{
+:root {}
 
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+    /* Hack para Box Model **/
+    scroll-snap-type: y mandatory;
 }
-html{
-        font-size: 62.5%;
-        box-sizing: border-box; /* Hack para Box Model **/
-        scroll-snap-type: y mandatory;
-}
-body{
+
+body {
     font-family: 'Roboto', sans-serif;
 
 }
+
 /***header background*/
-.bg_principale{
+.bg_principale {
     width: 100%;
     height: 100vh;
     position: relative;
     display: flex;
     flex-direction: column;
-    
-   
+
+
 }
-.box_video{
-position: absolute;
-top: 0;
-left: 0;
-width: 100%;
-height: 100%;
-overflow: hidden;
-background-color: white;
+
+.box_video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-color: white;
 }
-.video{
-min-height: 100%;
-min-width: 100%;
-object-fit: cover;
-position: absolute;
-top: 50%;
-left: 50%;
-transform: translate(-50%,-50%);
+
+.video {
+    min-height: 100%;
+    min-width: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
-.box_video:after{
+
+.box_video:after {
     content: '';
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-color:  rgba(192, 22, 169, 0.666);
+    background-color: rgba(192, 22, 169, 0.666);
 }
+
 /*****ABSOLUTE******/
-.absolute{
+.absolute {
     z-index: 10;
-  
+
 }
-.info_title{
+
+.info_title {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -62,16 +69,18 @@ transform: translate(-50%,-50%);
     right: 0;
     left: 0;
     bottom: 0;
-    
+
 }
-.title{
+
+.title {
     color: white;
     font-size: 5rem;
     text-transform: uppercase;
     font-weight: 100;
-    
+
 }
-.button{
+
+.button {
     font-size: 2.5rem;
     text-transform: uppercase;
     border: 2px solid rgba(192, 22, 169);
@@ -82,24 +91,27 @@ transform: translate(-50%,-50%);
 }
 
 /***navegacion***/
-.nav{
+.nav {
     display: flex;
-    justify-content:center;
-    align-items:center;
-    margin:2rem auto;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem auto;
+    flex-wrap: wrap;
     /* position: absolute; */
 }
 
-.box_link{
- display: flex;
- justify-content: flex-end;
- margin-left: 15rem;
+.box_link {
+    display: flex;
+    justify-content: flex-end;
+    margin-left: 15rem;
 }
-.logo_nav{
+
+.logo_nav {
     z-index: 100;
     margin-right: 15rem;
 }
-.link{
+
+.link {
     color: white;
     text-decoration: none;
     font-size: 1.7rem;
@@ -107,78 +119,150 @@ transform: translate(-50%,-50%);
     z-index: 100;
     text-transform: uppercase;
 }
+.link:hover,.link_phone:hover{
+    color: #e0b00f;
+}
+
 /***ANIMATION BUTTON**/
-.reserve{
-    border: 2px solid rgba(192, 22, 169) ;
+.reserve {
+    border: 2px solid rgba(192, 22, 169);
     padding: 1.5rem 0.5rem;
     margin: 0;
     border-radius: 1rem;
 }
+
 .reserve:hover,
-.button:hover{
-    background-image: linear-gradient(135deg,#0087d4,rgba(192,22,169),#ff7cae);
+.button:hover {
+    background-image: linear-gradient(135deg, #0087d4, rgba(192, 22, 169), #ff7cae);
     background-size: 200%;
     animation: fanimado 2s infinite;
 }
-@keyframes fanimado{
-    0%{
+
+@keyframes fanimado {
+    0% {
         background-position: 0% 50%;
     }
-    50%{
+
+    50% {
         background-position: 100% 50%;
     }
-    100%{
+
+    100% {
         background-position: 0% 50%;
     }
 }
+
 /***END ANIMATION***/
-.bars{
+.bars {
     color: white;
     font-size: 3.5rem;
     display: none;
 }
-.icon_nav >a{
+
+.icon_nav>a {
     display: none;
 }
-@media(max-width:413px){
-    .logo_nav{
+.box_close{
+    display: none;
+}
+.nav_phone{
+    display: none;
+}
+@media(max-width:413px) {
+    .logo_nav {
         width: 12rem;
         display: block;
         margin: 2rem auto;
     }
-    .box_link{
+
+    .box_link {
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+    .link{
         display: none;
     }
-    .title{
+    .close {
+        color: white;
+        font-size: 3rem;
+        background-color: #ff7cae;
+        width: 4rem;
+        height: 4rem;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        cursor: pointer;
+    }
+
+    .title {
         font-size: 3rem;
         text-align: center;
         padding: 0.5rem;
     }
-.bars{
-    display: block;
-    margin: 2rem;
+/*****boton de menu******/
+    .bars {
+        display: inline-block;
+        margin: 2rem;
+        z-index: 1000;
+        cursor: pointer;
+    }
 
-}
-.nav>a{
-    display: none;
-}
-.link{
-    display: none;
-}
-.icon_nav{
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    .nav>a {
+        display: none;
+    }
 
-}
-.icon_nav>a{
-    display: block;
-    margin: 2rem;
+    .icon_nav {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
 
-}
-.nav{
-    flex-direction: column;
-}
-}
+    }
 
+    .icon_nav>a {
+        display: block;
+        margin: 2rem;
+
+    }
+
+    .nav {
+        flex-direction: column;
+    }
+    .nav_phone{
+        display: block;
+        position: absolute;
+        background-image: url(../img/fondo_menu.png);
+        background-size: cover;
+        width:60%;
+        height: 100vh;
+        top: 0;
+        z-index: 100;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;  
+        transition: all 0.5s ease;
+        
+    }
+    .active{
+        transform: translate(-30rem);
+    }
+    .opacity{
+        
+        transition: all 1s ease;
+    }
+    .link_phone{
+        text-decoration: none;
+        font-size: 2rem;
+        color: white;
+        text-transform: uppercase;
+        margin: 3.5rem 0;
+        font-weight: bold;
+        
+    }
+    .link_phone:hover{
+        transform: scale(1.2);
+        border-bottom: 0.1rem solid white;
+    }
+    
+}
