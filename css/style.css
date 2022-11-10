@@ -430,4 +430,13 @@ cursor: pointer;
     .re_sc{
         font-size: 2.5rem;
     }
+    .formulario{
+        overflow: hidden;
+    }
+    .form{
+        width: 50rem;
+        overflow: scroll;
+        height: 30rem;
+        
+    }
   }
