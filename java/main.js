@@ -12,7 +12,18 @@ open.addEventListener('click',(e)=>{
   
 })
 
+/// formulario
+let formulario = document.querySelector('.formulario')
+let push = document.querySelector('.reserve')
+let closeIcon=document.querySelector('.icon_close')
+let closeDesckop=document.querySelector('.reserve-click')
 
-
-
-
+push.addEventListener('click',()=>{
+    formulario.style.transform='scale(1)'
+})
+closeDesckop.addEventListener('click',()=>{
+    formulario.style.transform='scale(1)'
+})
+closeIcon.addEventListener('click',()=>{
+    formulario.style.transform='scale(0)'
+})
