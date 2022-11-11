@@ -315,10 +315,22 @@ cursor: pointer;
     .bars {
         display: inline-block;
         margin: 2rem;
-        z-index: 1000;
+        z-index: 100;
         cursor: pointer;
     }
+    .closep_x{
+        width: 100%;
+        font-size: 4rem;
+        color: white;
+        position: relative;
+        top: -5rem;
+        text-align: end;
+        right: 5rem;
+        padding: 2rem;
+        
 
+        
+    }
     .nav>a {
         display: none;
     }
@@ -356,10 +368,10 @@ cursor: pointer;
         transition: all 0.5s ease;
         backdrop-filter: blur(0.2);
         
-        
+        transform: translate(-30rem);
     }
     .active{
-        transform: translate(-30rem);
+        
     }
     .opacity{
         
@@ -406,7 +418,7 @@ cursor: pointer;
     }
 }
   
-@media (orientation: landscape) {
+@media all and (max-width:81rem) and (max-height:40rem) and (orientation: landscape) {
     .title{
         font-size: 2.5rem;
     }

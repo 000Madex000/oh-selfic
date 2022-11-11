@@ -1,12 +1,128 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
+    <script src="https://kit.fontawesome.com/ac32b58baf.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/styleInicio.css">
+    <title>pagina eventos</title>
 </head>
+
 <body>
-    
+    <header class="bg_principale">
+        <div class="box_video">
+            <img src="../img/fondo_inicio.jpg" alt="">
+        </div>
+        <div class="absolute">
+            <nav class="nav">
+                <div class="icon_nav ">
+                    <i class="fa-solid fa-bars bars"></i>
+                    <a href="#" class="link reserve">reserva ya</a>
+                </div>
+
+                <img class="logo_nav" src="../img/logo.png" alt="" width="120">
+                <div class="box_link">
+                    <div class="box_close">
+                        <p class="close active_bars">x</p>
+                    </div>
+                
+                    <a href="#" class="link" target="_blank">inicio</a>
+                    <a href="#" class="link" target="_blank">acerca de mi</a>
+                    <a href="#" class="link" target="_blank">eventos</a>
+                    <a href="#" class="link" target="_blank">nosotros</a>
+                    <a href="#" class="link" target="_blank">contactos</a>
+                </div>
+                
+                    <a href="#" class="link reserve reserve-click">reserva ya</a>
+                
+
+            </nav>
+            <div class="nav_phone active">
+                <p class="closep_x"><i class="fa-solid fa-circle-xmark"></i></p>
+                <a href="#" class="link_phone" target="_blank">inicio</a>
+                <a href="#" class="link_phone" target="_blank">acerca de mi</a>
+                <a href="#" class="link_phone" target="_blank">eventos</a>
+                <a href="#" class="link_phone" target="_blank">nosotros</a>
+                <a href="#" class="link_phone" target="_blank">contactos</a>
+            </div>
+
+            <div class="info_title">
+                <!-- <h1 class="title tl">
+                    !! registra ese momento inolvidable !!
+                </h1> -->
+                <a class="button">bienvenido</a>
+                <div class="redes_sociales">
+                    <a href="https://web.facebook.com/OhSelfic" target="_blank"><i class="fa-brands fa-square-facebook re_sc"></i></a>
+                    <a href="#"><i class="fa-brands fa-square-twitter re_sc"></i></a>
+                    <a href="https://www.instagram.com/ohselfic/" target="_blank"><i class="fa-brands fa-square-instagram re_sc"></i></a>
+
+
+
+                </div>
+            </div>
+
+
+        </div>
+
+        <section class="formulario clicki">
+            <div class="icon_close">
+                <i class="fa-solid fa-rectangle-xmark icon_close-fa"></i>
+            </div>
+            <form action="" class="form">
+
+                <fieldset class="box_form">
+                    <legend>
+                        ingresa tu dia de evento
+                    </legend>
+                    <div class="camp_input">
+                        <label for="name">nombre y apellido</label>
+                        <input type="text" id="name" placeholder="   tu nombre">
+                    </div>
+                    <div class="camp_input">
+                        <label for="email">correo</label>
+                        <input type="email" name="" id="email" placeholder="  tu correo">
+                    </div>
+                    <div class="camp_input">
+                        <label for="phone">telefono</label>
+                        <input type="tel" placeholder="   tu telefono">
+                    </div>
+                    <div class="camp_input">
+                        <label for=" date">fecha de evento</label>
+                        <input type="date" name="" id="date" placeholder="">
+                    </div>
+                    <div class="camp_input">
+                        <label for="direccion">lugar</label>
+
+                        <input type="text" id="direccion" placeholder="  tu direccion">
+                    </div>
+                    <div class="camp_input">
+                        <label for="">distrito</label>
+                        <input type="text" id="direccion" placeholder="  tu distrito">
+
+                    </div>
+                    <div class="camp_input one">
+                        <label for="comentario">comentario</label>
+                        <textarea name="" id="comentario"></textarea>
+                    </div>
+                    <div class="btn_box">
+                        <input class="btn" type="submit" value="enviar">
+                    </div>
+
+                </fieldset>
+
+            </form>
+        </section>
+
+    </header>
+
+    <script src="../java/main.js"></script>
 </body>
+
 </html>
