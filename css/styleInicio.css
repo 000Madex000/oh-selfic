@@ -1,7 +1,12 @@
-.bg_principale{
-    width: auto;
-    height: 54.8rem;
+.img_fondo-inicio{
+    position: absolute;
 }
-.box_video:after {
+.box_video:after{
     background-color: transparent;
+}
+.info_title>h1{
+    display:none ;
+}
+.button{
+    display: none;
 }
