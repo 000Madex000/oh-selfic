@@ -17,14 +17,6 @@
     background-color: transparent;
 }
 
-.info_title>h1 {
-    display: ;
-}
-
-.button {
-    display: ;
-}
-
 .images_360 {
     position: absolute;
     top: 0;
@@ -309,20 +301,6 @@ border-left: 2px solid white;
     align-items: center;
 }
 
-.abajo{
-    background-color: rgba(34, 8, 58, 0.911);
-    height: 13rem;
-    width: 100%;
-}
-.absolute{
-    
-}
-.logo_nav{
-   
-}
-.box_link{
-    margin: 0 5rem;
-}
 @media (max-width:410px){
     
     .img_fondo-inicio{
