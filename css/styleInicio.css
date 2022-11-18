@@ -17,6 +17,14 @@
     background-color: transparent;
 }
 
+.info_title>h1 {
+    display: ;
+}
+
+.button {
+    display: ;
+}
+
 .images_360 {
     position: absolute;
     top: 0;
@@ -300,9 +308,7 @@ border-left: 2px solid white;
     justify-content: center;
     align-items: center;
 }
-
 @media (max-width:410px){
-    
     .img_fondo-inicio{
         width: 100%;
         height: 50rem;
@@ -338,13 +344,6 @@ border-left: 2px solid white;
     .redes>a{
         font-size: 1.5rem;
     }
-    .x{
-        position: absolute;
-        top: 0;
-    }
-    .shadow_img{
-        
-    }
     .shadow_img>p{
         text-align: center;
         color: white;
@@ -354,14 +353,7 @@ border-left: 2px solid white;
     
         
     }
-    .about{
-        margin-bottom: 0;
-        padding-bottom: 0;
-    }
     .about-img{
         width: 35rem;
-    }
-    .text_img{
-        margin-top: 0;
     }
 }
