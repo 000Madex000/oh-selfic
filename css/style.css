@@ -89,6 +89,7 @@ body {
     border-radius: 1rem;
     cursor: pointer;
     margin-bottom: 5rem;
+    text-decoration: none;
 }
 
 /***navegacion***/
@@ -109,7 +110,7 @@ body {
 
 .logo_nav {
     z-index: 100;
-    margin-right: 15rem;
+    margin-left: 15rem;
 }
 
 .link {
@@ -294,7 +295,11 @@ cursor: pointer;
     }
     .link{
         display: none;
+
     }
+    
+        
+    
     .close {
         color: white;
         font-size: 3rem;
@@ -354,11 +359,12 @@ cursor: pointer;
         flex-direction: column;
     }
     .nav_phone{
+        text-align: center;
         display: block;
         position: absolute;
         background-color: #350b23f1;
         background-size: cover;
-        width:60%;
+        width:80%;
         height: 100vh;
         top: 0;
         z-index: 100;
@@ -413,9 +419,14 @@ cursor: pointer;
     }
     .box_link{
         margin: 0;
+        
     }
     .info_title{
      text-align: center;
+    }
+    .link{
+        font-size: 1rem;
+        margin: 0.5rem;
     }
 }
   
