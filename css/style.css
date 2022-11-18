@@ -375,7 +375,7 @@ cursor: pointer;
         transition: all 0.5s ease;
         backdrop-filter: blur(0.2);
         
-        transform: translate(-30rem);
+        transform: translate(-40rem);
     }
     .active{
         
