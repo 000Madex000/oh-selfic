@@ -74,7 +74,7 @@ closeIcon.addEventListener('click', () => {
 //     carrusel(contenedor);
 // })
 
-window.addEventListener('scroll',() =>{
-    let header = document.querySelector('.absolute');
-    header.classList.toggle('abajo',window.scrollY>0)
-})
+// window.addEventListener('scroll',() =>{
+//     let header = document.querySelector('.absolute');
+//     header.classList.toggle('abajo',window.scrollY>0)
+// })
